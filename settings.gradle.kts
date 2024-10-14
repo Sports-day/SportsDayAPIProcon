@@ -1,1 +1,1 @@
-rootProject.name = "SportsDayAPI"
+rootProject.name = "SportsDayAPIProcon"
