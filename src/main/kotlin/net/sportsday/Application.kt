@@ -14,7 +14,6 @@ import net.sportsday.bin.main as Seeder
 fun main(args: Array<String>): Unit = EngineMain.main(args)
 
 fun Application.module() {
-    println("Launching SportsDay API")
     //  Seed data for demo
     Seeder()
 
