@@ -23,16 +23,9 @@ import net.sportsday.utils.respondOrInternalError
 fun Route.authenticationRouter() {
     route("/login") {
         post {
-            val code = call.receive<OpenIDConnectCode>()
-
             try {
                 //  login
-                val user = AuthenticationService.login(code.code, code.redirectUri)
-
-                if (user == null) {
-                    call.respond(HttpStatusCode.Unauthorized, MessageResponse("Unauthorized"))
-                    return@post
-                }
+                val user = AuthenticationService.login()
 
                 //  issue JWT token
                 val jwt = JwtConfig.makeToken(user.id.toString())
