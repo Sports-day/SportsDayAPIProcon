@@ -67,8 +67,8 @@ fun main() {
         //  user
         val users = listOf(
             UserEntity.new {
-                name = "testusuke"
-                email = "e2011240@toyama.kosen-ac.jp"
+                name = "デモ"
+                email = "demo1@toyama.kosen-ac.jp"
                 gender = GenderType.MALE
                 classEntity = classes[0]
                 createdAt = LocalDateTime.now()
@@ -91,8 +91,8 @@ fun main() {
                 updatedAt = LocalDateTime.now()
             },
             UserEntity.new {
-                name = "nayu"
-                email = "m2011124@toyama.kosen-ac.jp"
+                name = "デモ2"
+                email = "demo2@toyama.kosen-ac.jp"
                 gender = GenderType.MALE
                 classEntity = classes[1]
                 createdAt = LocalDateTime.now()
@@ -139,8 +139,8 @@ fun main() {
                 updatedAt = LocalDateTime.now()
             },
             UserEntity.new {
-                name = "?"
-                email = "e2311203@toyama.kosen-ac.jp"
+                name = "デモ3"
+                email = "demo3@toyama.kosen-ac.jp"
                 gender = GenderType.MALE
                 classEntity = classes[1]
                 createdAt = LocalDateTime.now()

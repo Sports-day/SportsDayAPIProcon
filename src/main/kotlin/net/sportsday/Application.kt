@@ -9,16 +9,19 @@ import net.sportsday.utils.DatabaseManager
 import net.sportsday.utils.RedisManager
 import net.sportsday.utils.configuration.KeyValueStore
 import net.sportsday.utils.logger.Logger
+import net.sportsday.bin.main as Seeder
 
 fun main(args: Array<String>): Unit = EngineMain.main(args)
 
 fun Application.module() {
+    //  Seed data for demo
+    Seeder()
+
     configureHTTP()
     configureMonitoring()
     configureSerialization()
     configureSecurity()
     configureRouting()
-//    configureRateLimit()
     configureStatusPage()
 
     //  DB
